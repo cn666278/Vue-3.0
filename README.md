@@ -5,6 +5,9 @@ Vue 3.0 study note
 1. [Vue API Reference official website](https://vuejs.org/api)  
 2. [UI](https://www.naiveui.com/zh-CN/light/components)  
 3. [API](http://111.59.30.30:20002/doc)  
+4. [Vue 防抖的三种处理方式](https://blog.csdn.net/qq453660983/article/details/125276335)
+5. [防抖与节流](https://blog.csdn.net/m0_48166663/article/details/121144995)
+
 
 ## shallowReadonly()
 
