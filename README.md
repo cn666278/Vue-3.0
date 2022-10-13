@@ -1,9 +1,10 @@
 # Vue-3.0
 Vue 3.0 study note
 
-[Vue API Reference official website](https://vuejs.org/api) 
-[UI](https://www.naiveui.com/zh-CN/light/components)  
-[API](http://111.59.30.30:20002/doc)
+### References
+1. [Vue API Reference official website](https://vuejs.org/api)  
+2. [UI](https://www.naiveui.com/zh-CN/light/components)  
+3. [API](http://111.59.30.30:20002/doc)  
 
 ## shallowReadonly()
 
