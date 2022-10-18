@@ -8,7 +8,9 @@ Vue 3.0 study note
 4. [Vue 防抖的三种处理方式](https://blog.csdn.net/qq453660983/article/details/125276335)  
 5. [防抖与节流](https://blog.csdn.net/m0_48166663/article/details/121144995)  
 6. [Vue生命周期函数](https://blog.csdn.net/weixin_45791692/article/details/124045505)  
-7. [后盾人前端](https://doc.houdunren.com/)
+7. [后盾人前端](https://doc.houdunren.com/)  
+8. [Flex布局](https://juejin.cn/post/7031050931206619172)
+9. [Grid布局](https://juejin.cn/post/7031366821106155556)
 
 
 ## shallowReadonly()
