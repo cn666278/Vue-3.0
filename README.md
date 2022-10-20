@@ -46,3 +46,10 @@ isReadonly(state.nested) // false
 // works
 state.nested.bar++
 ```
+
+### v-if 和 v-for  
+
+警告：
+同时使用 v-if 和 v-for 是不推荐的，因为这样二者的优先级不明显。
+
+当 v-if 和 v-for 同时存在于一个元素上的时候，`v-if 会首先被执行`。
