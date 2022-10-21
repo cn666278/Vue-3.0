@@ -13,6 +13,7 @@ Vue 3.0 study note
 9. [Grid布局](https://juejin.cn/post/7031366821106155556)
 10. [EP6-Promise](https://blog.csdn.net/m0_46846526/article/details/119345337?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522166607450616782391816539%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=166607450616782391816539&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_positive~default-2-119345337-null-null.142^v58^pc_search_tree,201^v3^control_1&utm_term=Promise&spm=1018.2226.3001.4187)
 11. [computed-caching-vs-methods](https://cn.vuejs.org/guide/essentials/computed.html#computed-caching-vs-methods)
+12. [Vue中的扩展运算符 ...](https://blog.csdn.net/weixin_44682587/article/details/113740701)
 
 
 ## shallowReadonly()
