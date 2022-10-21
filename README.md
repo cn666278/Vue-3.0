@@ -15,6 +15,7 @@ Vue 3.0 study note
 11. [computed-caching-vs-methods](https://cn.vuejs.org/guide/essentials/computed.html#computed-caching-vs-methods)
 12. [Vue中的扩展运算符 ...](https://blog.csdn.net/weixin_44682587/article/details/113740701)
 13. [原生DOM中的事件（事件流、事件委托）](https://blog.csdn.net/weixin_46163658/article/details/121869715)
+14. [原生js Dom事件](https://www.jianshu.com/p/b2b8a4186195)
 
 
 ## shallowReadonly()
