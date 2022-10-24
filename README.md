@@ -126,9 +126,7 @@ state.nested.bar++
   在vue官网上有这样的一句话：
 “camelCase vs. kebab-case
 HTML 属性是不区分大小写的。所以，当使用的不是字符串模版，camelCased (驼峰式) 命名的 prop 需要转换为相对应的 kebab-case (短横线隔开式) 命名： 如果你使用字符串模版，则没有这些限制。”
-小森表示对这句话好懵啊！
-经过自己的各种倒弄终于得到了下边的东西。
-##重点在这里：
+#### 重点在这里：
 1. html特性不区分大小写：
 ```html
   <!DOCTYPE html>
