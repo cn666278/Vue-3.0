@@ -51,7 +51,7 @@ isReadonly(state.nested) // false
 state.nested.bar++
 ```
 
-### v-if 和 v-for  
+## v-if 和 v-for  
 
 警告：
 同时使用 v-if 和 v-for 是不推荐的，因为这样二者的优先级不明显。
@@ -77,8 +77,8 @@ state.nested.bar++
 </template>
 ```
 
-### 命名方式
-#### 骆驼式命名法（Camel-Case）
+## 命名方式
+### 骆驼式命名法（Camel-Case）
   ```
 又称驼峰式命名法，是电脑程式编写时的一套命名规则（惯例）。  
 正如它的名称CamelCase所表示的那样，是指混合使用大小写字母来构成变量和函数的名字。  
@@ -98,7 +98,7 @@ state.nested.bar++
 
   常用于类名，命名空间等。例如：public class DataBaseUser;
 
-#### 帕斯卡命名法
+### 帕斯卡命名法
   ```
   帕斯卡命名法指当变量名和函式名称是由两个或两个以上单字连结在一起，而构成的唯一识别字时，用以增加变量和函式的可读性。
 
