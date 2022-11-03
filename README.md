@@ -196,8 +196,8 @@ HTML 属性是不区分大小写的。所以，当使用的不是字符串模版
 ```
 
 ### customRef
-创建一个自定义的 ref，并对其依赖项跟踪和更新触发进行显式控制
-需求: 使用 customRef 实现 debounce(防抖) 的示例  
+创建一个自定义的 ref，并对其依赖项跟踪和更新触发进行显式控制  
+需求: 使用 customRef 实现 debounce(防抖) 的示例    
   
 ```typescript
 <template>
