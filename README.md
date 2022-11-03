@@ -201,12 +201,12 @@ HTML 属性是不区分大小写的。所以，当使用的不是字符串模版
   
 ```typescript
 <template>
-  <h2>App</h2>
-  <input v-model="keyword" placeholder="搜索关键字"/>
-  <p>{{keyword}}</p>
+    <h2> App </h2>
+    <input v-model = "keyword" placeholder = "搜索关键字" />
+    <p>{{ keyword }}</p>
 </template>
 
-<script lang="ts">
+<script lang = "ts">
 /*
 customRef:
   创建一个自定义的 ref，并对其依赖项跟踪和更新触发进行显式控制
@@ -218,13 +218,13 @@ customRef:
 import { ref, customRef } from 'vue'
 
 export default {
-  setup () {
-    const keyword = useDebouncedRef('', 500)
-    console.log(keyword)
-    return {
-      keyword
-    }
-  },
+    setup() {
+        const keyword = useDebouncedRef('', 500)
+        console.log(keyword)
+        return {
+            keyword
+        }
+    },
 }
 
 /* 
@@ -232,27 +232,28 @@ export default {
 */
 // value 传入的数据，将来数据的类型不确定，所以使用泛型。 delay:放抖的时间间隔，默认为200毫秒(ms)
 function useDebouncedRef<T>(value: T, delay = 200) {
-  let timeoutId: number
-  return customRef((track, trigger) => {
-    return {
-      // get:返回数据
-      get() {
-        // 告诉Vue追踪数据
-        track()
-        return value
-      },
-      // set:设置数据
-      set(newValue: T) {
-        clearTimeout(timeoutId)
-        // 开启定时器
-        timeoutId = setTimeout(() => {
-          value = newValue
-          // 告诉Vue去触发界面更新
-          trigger()
-        }, delay)
-      }
-    }
-  })
+    let timeoutId: number
+    return customRef((track, trigger) => {
+        return {
+            // get:返回数据
+            get() {
+                // 告诉Vue追踪数据
+                track()
+                return value
+            },
+            // set:设置数据
+            set(newValue: T) {
+                // 清除计时
+                clearTimeout(timeoutId)
+                // 开启定时器
+                timeoutId = setTimeout(() => {
+                    value = newValue
+                    // 告诉Vue去触发界面更新
+                    trigger()
+                }, delay)
+            }
+        }
+    })
 }
 
 </script>
