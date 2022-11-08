@@ -263,6 +263,7 @@ function useDebouncedRef<T>(value: T, delay = 200) {
 [h函数1](https://blog.csdn.net/qq_45494634/article/details/117019105)  
 [h函数2](https://blog.csdn.net/weixin_47450807/article/details/122933658)  
 [h函数3](https://zhuanlan.zhihu.com/p/407905035)  
+[h函数常用方法以及说明](https://www.jb51.net/article/259768.htm)
   
 h函数接收三个参数。  
 第一个参数:，可以为一个html标签，一个组件，一个异步组件，或者是一个函数式组件。  
