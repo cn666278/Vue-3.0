@@ -262,3 +262,25 @@ function useDebouncedRef<T>(value: T, delay = 200) {
 ## Vue 中的 `h函数`
 [h函数1](https://blog.csdn.net/qq_45494634/article/details/117019105)  
 [h函数2](https://blog.csdn.net/weixin_47450807/article/details/122933658)  
+  
+h函数接收三个参数。  
+第一个参数:，可以为一个html标签，一个组件，一个异步组件，或者是一个函数式组件。  
+第二个参数：{ Object } Props，与attributes和props,以及事件对应的对象，我们可以在模板中使用，如果没有需要传入的属性，可以设置为null。  
+第三个参数：{String | Object |Array}可以是字符串Text文本或者是h函数构建的对象再者可以是有插槽的对象。  
+  
+```typescript
+  render() {
+    return h(
+      "div",
+      {
+        class: "app",
+      },
+      [
+        // 这里this是可以取到setup中的返回值的 
+        h("h2", null, `当前计数: ${this.counter}`),
+        h("button", {onclick:() => this.counter++}, "+1"),
+        h("button", {onclick:() => this.counter--}, "-1"),
+      ]
+    );
+  },
+```
