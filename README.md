@@ -268,7 +268,9 @@ function useDebouncedRef<T>(value: T, delay = 200) {
 h函数接收三个参数。  
 第一个参数:，可以为一个html标签，一个组件，一个异步组件，或者是一个函数式组件。  
 第二个参数：{ Object } Props，与attributes和props,以及事件对应的对象，我们可以在模板中使用，如果没有需要传入的属性，可以设置为null。  
-第三个参数(optional)：{String | Object |Array}可以是字符串Text文本或者是h函数构建的对象再者可以是有插槽的对象。  
+第三个参数(optional)：{String | Object |Array}可以是字符串Text文本或者是h函数构建的对象再者可以是有插槽的对象。
+  
+"h"函数的第1个参数是"标签名", 第2个是"属性", 在这个例子里可以理解为html的所有属性, 第3个是"内容". "内容"不仅仅可以是字符串, 还可以是"VNode"或2者混合：
   
 ```typescript
   render() {
