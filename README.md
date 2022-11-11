@@ -305,3 +305,7 @@ export default defineComponent({
     );
   },
 ```
+
+## ES6学习：解构赋值
+  
+[解构赋值](https://www.jianshu.com/p/3f7afae3a9be)
