@@ -425,19 +425,19 @@ console.log(person) // { name: '邵威儒', age: 28 }
 ### 触发与监听事件#
 在组件的模板表达式中，可以直接使用 $emit 方法触发自定义事件 (例如：在 v-on 的处理函数中)：
 
-```typescript
+```vue
 <!-- MyComponent -->
 <button @click="$emit('someEvent')">click me</button>
 ```
  
   父组件可以通过 v-on (缩写为 @) 来监听事件： 
   
-```typescript
+```vue
 <MyComponent @some-event="callback" />
 ```
   同样，组件的事件监听器也支持 .once 修饰符：
 
-```typescript
+```vue
 <MyComponent @some-event.once="callback" />
 ```
   像组件与 prop 一样，事件的名字也提供了自动的格式转换。注意这里我们触发了一个以 camelCase 形式命名的事件，但在父组件中可以使用 kebab-case 形式来监听。   
