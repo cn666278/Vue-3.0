@@ -418,3 +418,62 @@ let age = { age:28 }
 let person = {...name,...age}
 console.log(person) // { name: '邵威儒', age: 28 }
 ```
+
+## 组件事件
+此章节假设你已经看过了组件基础。若你还不了解组件是什么，请先阅读该章节。
+
+### 触发与监听事件#
+在组件的模板表达式中，可以直接使用 $emit 方法触发自定义事件 (例如：在 v-on 的处理函数中)：
+
+```typescript
+<!-- MyComponent -->
+<button @click="$emit('someEvent')">click me</button>
+```
+ 
+  父组件可以通过 v-on (缩写为 @) 来监听事件： 
+  
+```typescript
+<MyComponent @some-event="callback" />
+```
+  同样，组件的事件监听器也支持 .once 修饰符：
+
+```typescript
+<MyComponent @some-event.once="callback" />
+```
+  像组件与 prop 一样，事件的名字也提供了自动的格式转换。注意这里我们触发了一个以 camelCase 形式命名的事件，但在父组件中可以使用 kebab-case 形式来监听。   
+  与 prop 大小写格式一样，在模板中我们也推荐使用 kebab-case 形式来编写监听器。  
+  
+#### TIP
+```
+和原生 DOM 事件不一样，组件触发的事件没有冒泡机制。你只能监听直接子组件触发的事件。  
+平级组件或是跨越多层嵌套的组件间通信，应使用一个外部的事件总线，或是使用一个全局状态管理方案。
+```
+### 事件参数#
+有时候我们会需要在触发事件时附带一个特定的值。举例来说，我们想要 <BlogPost> 组件来管理文本会缩放得多大。在这个场景下，我们可以给 $emit 提供一个额外的参数：
+
+```vue
+<button @click="$emit('increaseBy', 1)">
+  Increase by 1
+</button>
+```
+然后我们在父组件中监听事件，我们可以先简单写一个内联的箭头函数作为监听器，此函数会接收到事件附带的参数：
+
+```vue
+<MyButton @increase-by="(n) => count += n" />
+```
+或者，也可以用一个组件方法来作为事件处理函数：
+
+```vue
+<MyButton @increase-by="increaseCount" />
+```
+该方法也会接收到事件所传递的参数：
+
+```typescript
+function increaseCount(n) {
+  count.value += n
+}
+```
+#### TIP
+```vue
+所有传入 $emit() 的额外参数都会被直接传向监听器。举例来说，$emit('foo', 1, 2, 3) 触发后，监听器函数将会收到这三个参数值。
+```
