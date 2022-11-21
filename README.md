@@ -1,5 +1,6 @@
 # Vue-3.0
 Vue 3.0 study note
+"Make epic shit" --Evan You  
 [The story of Evan You and Vue](https://baijiahao.baidu.com/s?id=1730409379485988644&wfr=spider&for=pc)  
 
 ### References
