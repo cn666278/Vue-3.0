@@ -3,7 +3,7 @@ Vue 3.0 study note
 
 [The story of Evan You and Vue](https://baijiahao.baidu.com/s?id=1730409379485988644&wfr=spider&for=pc)  
 ```
-"Make epic shit" --Evan You  
+"Make epic shit" -- Evan You  
 ```
 
 ### References
